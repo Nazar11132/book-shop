@@ -162,33 +162,6 @@ header {
       display: flex;
   }
 } 
-@media screen and (max-width: 768px) {
-  .table-container {
-    overflow-x: auto;
-  }
-  
-  table {
-    width: 100%;
-    display: block;
-  }
-}
-@media screen and (max-width: 768px) {
-  .book-table {
-    display: block;
-  }
-  
-  .book-table tr {
-    display: flex;
-    flex-direction: column; /* Кожна клітинка одна під одною */
-  }
-
-  .book-table td, 
-  .book-table th {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-}
   .hero {
     font-size: 24px; 
     text-align: center;
@@ -921,3 +894,11 @@ section.content li {
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
+
+
+
+
+
+
+
+
