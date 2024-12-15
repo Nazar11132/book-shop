@@ -162,6 +162,16 @@ header {
       display: flex;
   }
 } 
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    display: block;
+  }
+}
   .hero {
     font-size: 24px; 
     text-align: center;
@@ -894,11 +904,3 @@ section.content li {
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
-
-
-
-
-
-
-
-
