@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookLand</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/books.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <img src="images/books.png" alt="Логотип магазину" class="logo">
+      <h1 class="store-title">BookLand</h1>
+    </div>
+    <nav>
+      <div class="menu-container">
+        <button class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <span class="menu-label">Меню</span> 
+    </div>
+    <ul class="horizontal-menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="catalog.html">Каталог книг</a></li>
+      <li><a href="new-arrivals.html">Новинки</a></li>
+      <li><a href="audio-book.html">Аудіокниги</a></li>
+      <li><a href="cart.html">Кошик</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <ul class="mobile-menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="catalog.html">Каталог книг</a></li>
+      <li><a href="new-arrivals.html">Новинки</a></li>
+      <li><a href="audio-book.html">Аудіокниги</a></li>
+      <li><a href="cart.html">Кошик</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Ласкаво просимо до книжкового магазину</h1>
+    </section>
+
+    <section class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="images/book1.jpg" alt="Книга 1">
+            <div class="carousel-text">
+              <h1>Ласкаво просимо до книжкового магазину</h1>
+              <p>Знайдіть свої улюблені книги у нас!</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/book2.jpg" alt="Книга 2">
+            <div class="carousel-text">
+              <h1>Відкрийте нові горизонти</h1>
+              <p>Дізнайтеся більше про світ через книги.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/book3.jpg" alt="Книга 3">
+            <div class="carousel-text">
+              <h1>Знайомтесь із новинками</h1>
+              <p>Ознайомтеся з останніми бестселерами.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn prev">❮</button>
+        <button class="carousel-btn next">❯</button>
+      </section>
+      <section class="hero">
+        <h1>Популярні книги</h1>
+        <p>Перегляньте нашу підбірку найпопулярніших книг нашого магазину!</p>
+      </section>
+    <section class="catalog-content">
+        <div class="book-grid">
+          <div class="book-card">
+            <img src="images/kobzar.jpg" alt="Кобзар" class="book-image">
+            <h3>Кобзар</h3>
+            <h3>Автор: Тарас Шевченко</h3>
+            <p><strong>Рік видання:</strong> 2020</p>
+            <p><strong>Видавництво:</strong> Глорія</p>
+            <p><strong>Ціна:</strong> 430 грн</p>
+            <button class="info-button" onclick="location.href='info-kobzar.html';">Дізнатися більше</button>
+            <button class="add-to-cart" 
+                    data-title="Кобзар" 
+                    data-author="Тарас Шевченко"
+                    data-product="Глорія"
+                    data-price="430">
+                    Додати в кошик
+            </button>
+          </div>
+          <div class="book-card">
+            <img src="images/grim.jpg" alt="Казки братів Грімм" class="book-image">
+            <h3>Казки братів Грімм</h3>
+            <h3>Автор: Брати Грімм</h3>
+            <p><strong>Рік видання:</strong> 2012</p>
+            <p><strong>Видавництво:</strong> Пегас</p>
+            <p><strong>Ціна:</strong> 109 грн</p>
+            <button class="info-button" onclick="location.href='info-grim.html';">Дізнатися більше</button>
+            <button class="add-to-cart" 
+                    data-title="Казки братів Грімм" 
+                    data-author="Брати Грімм" 
+                    data-product="Пегас"
+                    data-price="109">
+              Додати в кошик
+            </button>
+          </div>
+          <div class="book-card">
+            <img src="images/crime.jpg" alt="Зворотний бік злочину" class="book-image">
+            <h3>Зворотний бік злочину</h3>
+            <h3>Автор: Іван Франко</h3>
+            <p><strong>Рік видання:</strong> 2017</p>
+            <p><strong>Видавництво:</strong> Юрінком Інтер</p>
+            <p><strong>Ціна:</strong> 267 грн</p>
+            <button class="info-button" onclick="location.href='info-crime.html';">Дізнатися більше</button>
+            <button class="add-to-cart" 
+                    data-title="Зворотний бік злочину" 
+                    data-author="Іван Франко" 
+                    data-product="Юрінком Інтер"
+                    data-price="267">
+              Додати в кошик
+            </button>
+          </div>
+        </div>
+        </section>
+        <section class="hero">
+          <h1>Радимо до прочитання</h1>
+          <p>Перегляньте нашу підбірку рекомендованих нами для Вас книг!</p>
+        </section>
+      <section class="catalog-content">
+        <div class="book-grid">
+          <div class="book-card">
+            <img src="images/marusya.jpg" alt="Маруся Чурай" class="book-image">
+            <h3>Маруся Чурай</h3>
+            <h3>Автор: Ліна Костенко</h3>
+            <p><strong>Рік видання:</strong> 2018</p>
+            <p><strong>Видавництво:</strong> А-ба-ба-га-ла-ма-га</p>
+            <p><strong>Ціна:</strong> 440 грн</p>
+            <button class="info-button" onclick="location.href='info-marusya.html';">Дізнатися більше</button>
+            <button class="add-to-cart" 
+                    data-title="Маруся Чурай" 
+                    data-author="Ліна Костенко" 
+                    data-product="А-ба-ба-га-ла-ма-га"
+                    data-price="440">
+              Додати в кошик
+            </button>
+          </div>
+          <div class="book-card">
+            <img src="images/1984.jpg" alt="1984" class="book-image">
+            <h3>1984</h3>
+            <h3>Автор: Джордж Орвелл</h3>
+            <p><strong>Рік видання:</strong> 2021</p>
+            <p><strong>Видавництво:</strong> BookChef</p>
+            <p><strong>Ціна:</strong> 150 грн</p>
+            <button class="info-button" onclick="location.href='info-1984.html';">Дізнатися більше</button>
+            <button class="add-to-cart" 
+                    data-title="1984" 
+                    data-author="Джордж Орвелл" 
+                    data-product="BookChef"
+                    data-price="150">
+              Додати в кошик
+            </button>
+          </div>
+          <div class="book-card">
+            <img src="images/sea.jpg" alt="Старий і море" class="book-image">
+            <h3>Старий і море</h3>
+            <h3>Автор: Ернест Гемінґвей</h3>
+            <p><strong>Рік видання:</strong> 2017</p>
+            <p><strong>Видавництво:</strong> Видавництво Старого Лева</p>
+            <p><strong>Ціна:</strong> 480 грн</p>
+            <button class="info-button" onclick="location.href='info-sea.html';">Дізнатися більше</button>
+            <button class="add-to-cart" 
+                    data-title="Старий і море" 
+                    data-author="Ернест Гемінґвей" 
+                    data-product="Видавництво Старого Лева"
+                    data-price="480">
+              Додати в кошик
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="hero">
+      <h1>Знайдіть свої улюблені книги у нас!</h1>
+      <button class="info-button" onclick="location.href='catalog.html';">Ознайомитись з каталогом</button>
+    </section>
+      <section class="hero">
+        <h1>Підпишіться на нашу розсилку</h1>
+        <p>Отримуйте останні новини, акції та спеціальні пропозиції на ваш email.</p>
+      </section>
+      <section class="subscription">
+        <form class="subscription-form" onsubmit="showSubscriptionMessage(event)">
+          <input type="email" id="email" placeholder="Введіть ваш email" required>
+          <button type="submit">Підписатися</button>
+        </form>
+        <p id="subscription-message" class="hidden"></p>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>© 2015-2024 Книжковий магазин. Усі права захищено.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/profile.php?id=100016346208107" target="_blank">
+        <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/nazar_zakharkiv_?igsh=N3oyeHAyaGg5N2Ni" target="_blank">
+        <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://t.me/nazar_zakharkiv1" target="_blank">
+        <img src="images/telegram-icon.png" alt="Telegram" class="social-icon">
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="menu_script.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>

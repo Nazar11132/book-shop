@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кобзар - Інформація про книгу</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="top-bar">
+      <img src="images/books.png" alt="Логотип магазину" class="logo">
+      <h1 class="store-title">Книжковий магазин</h1>
+    </div>
+    <nav>
+      <div class="menu-container">
+        <button class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <span class="menu-label">Меню</span> 
+    </div>
+    <ul class="horizontal-menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="catalog.html">Каталог книг</a></li>
+      <li><a href="new-arrivals.html">Новинки</a></li>
+      <li><a href="audio-book.html">Аудіокниги</a></li>
+      <li><a href="cart.html">Кошик</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <ul class="mobile-menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="catalog.html">Каталог книг</a></li>
+      <li><a href="new-arrivals.html">Новинки</a></li>
+      <li><a href="audio-book.html">Аудіокниги</a></li>
+      <li><a href="cart.html">Кошик</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    </nav>
+  </header>
+<body>
+    <div class="info-page">
+        <div class="book-detail-page">
+          <div class="book-detail-container">
+            <div class="book-image-container">
+              <img src="images/dance.jpg" alt="Танець недоумка">
+            </div>
+            <div class="book-info">
+              <h1 class="book-title">Танець недоумка</h1>
+              <p><strong>Автор:</strong> Ілларіон Павлюк </p>
+              <p><strong>Рік написання:</strong> 2019</p>
+              <p><strong>Рік видання:</strong> 2019</p>
+              <p><strong>Видавництво:</strong> Видавництво Старого Лева</p>
+              <p><strong>Тип паперу:</strong> Офсетний</p>
+              <p><strong>Кількість сторінок:</strong> 680</p>
+              <p><strong>Ілюстрації:</strong> Відсутні</p>
+              <p><strong>Мова:</strong> Українська</p>
+              <p class="book-description">
+                <strong>Опис:</strong> Космічний біолог Гіль, за плечима якого чимало військових операцій, переживає не найкращі часи: безробіття, безгрошів'я, сім'я на межі розлучення, ще й висока ймовірність, що проявиться спадкова генетична хвороба, в якій швидка смерть — це чи не найкращий фінал. І ось неочікувано з'являється пропозиція роботи, яка, здавалося б, вирішує всі проблеми одночасно: наукова експедиція на далеку планету. Хороші гроші, медична страховка, мінімальні ризики. Чи виявиться рішення летіти, до якого підштовхує страх, правильним? І чи такі вже мінімальні ризики на далекій і химерній планеті Іш-Чель?
+              </p>
+              <h1 class="book-title">Ціна: 250 грн</h1>
+              <div class="button-group">
+                <button class="add-to-cart" 
+                data-title="Маленький принц" 
+                data-author="Антуан де Сент-Екзюпері" 
+                data-product="Ранок"
+                data-price="250">
+          Додати в кошик
+        </button>
+                <button class="back-to-catalog-button" onclick="location.href='catalog.html';">Повернутись до каталогу</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <footer>
+    <p>© 2015-2024 Книжковий магазин. Усі права захищено.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/profile.php?id=100016346208107" target="_blank">
+        <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/nazar_zakharkiv_?igsh=N3oyeHAyaGg5N2Ni" target="_blank">
+        <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://t.me/nazar_zakharkiv1" target="_blank">
+        <img src="images/telegram-icon.png" alt="Telegram" class="social-icon">
+      </a>
+    </div>
+  </footer>
+  <script src="menu_script.js"></script>
+  <script src="script.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>

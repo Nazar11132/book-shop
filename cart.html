@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кошик - BookLand</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/books.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <img src="images/books.png" alt="Логотип магазину" class="logo">
+      <h1 class="store-title">BookLand</h1>
+    </div>
+    <nav>
+      <div class="menu-container">
+        <button class="menu-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <span class="menu-label">Меню</span>
+      </div>
+      <ul class="horizontal-menu">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="catalog.html">Каталог книг</a></li>
+        <li><a href="new-arrivals.html">Новинки</a></li>
+        <li><a href="audio-book.html">Аудіокниги</a></li>
+        <li><a href="cart.html">Кошик</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="catalog.html">Каталог книг</a></li>
+        <li><a href="new-arrivals.html">Новинки</a></li>
+        <li><a href="audio-book.html">Аудіокниги</a></li>
+        <li><a href="cart.html">Кошик</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Кошик</h1>
+        <p>Тут знаходяться ваші обрані та додані товари до кошика!</p>
+    </section>
+    <section class="cart-content">
+      <div id="cart-container">
+        <p>Кошик порожній. Додайте книги з каталогу!</p>
+      </div>
+      <div id="total-price-container">
+        <p id="total-price">Загальна ціна: 0 грн</p>
+      </div>
+      <div class="checkout-container">
+        <button id="checkout-btn" disabled>Оформити замовлення</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2015-2024 Книжковий магазин. Усі права захищено.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/profile.php?id=100016346208107" target="_blank">
+        <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/nazar_zakharkiv_?igsh=N3oyeHAyaGg5N2Ni" target="_blank">
+        <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://t.me/nazar_zakharkiv1" target="_blank">
+        <img src="images/telegram-icon.png" alt="Telegram" class="social-icon">
+      </a>
+    </div>
+  </footer>
+
+  <script src="menu_script.js"></script>
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог книг - BookLand</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/books.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <img src="images/books.png" alt="Логотип магазину" class="logo">
+      <h1 class="store-title">BookLand</h1>
+    </div>
+    <nav>
+      <div class="menu-container">
+        <button class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <span class="menu-label">Меню</span> 
+    </div>
+    <ul class="horizontal-menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="catalog.html">Каталог книг</a></li>
+      <li><a href="new-arrivals.html">Новинки</a></li>
+      <li><a href="audio-book.html">Аудіокниги</a></li>
+      <li><a href="cart.html">Кошик</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <ul class="mobile-menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="catalog.html">Каталог книг</a></li>
+      <li><a href="new-arrivals.html">Новинки</a></li>
+      <li><a href="audio-book.html">Аудіокниги</a></li>
+      <li><a href="cart.html">Кошик</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Каталог книг</h1>
+      <p>Ознайомтесь з нашим великим вибором книг на будь-який смак!</p>
+      <p>Тут ви знайдете книги різних жанрів та авторів.</p>
+    </section>
+    <section class="search-bar">
+      <input type="text" id="search-input" placeholder="Пошук книг за назвою або автором">
+    </section>    
+    <section class="catalog-content">
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="images/kobzar.jpg" alt="Кобзар" class="book-image">
+          <h3>Кобзар</h3>
+          <h3>Автор: Тарас Шевченко</h3>
+          <p><strong>Рік видання:</strong> 2020</p>
+          <p><strong>Видавництво:</strong> Глорія</p>
+          <p><strong>Ціна:</strong> 430 грн</p>
+          <button class="info-button" onclick="location.href='info-kobzar.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Кобзар" 
+                  data-author="Тарас Шевченко"
+                  data-product="Глорія"
+                  data-price="430">
+                  Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/marusya.jpg" alt="Маруся Чурай" class="book-image">
+          <h3>Маруся Чурай</h3>
+          <h3>Автор: Ліна Костенко</h3>
+          <p><strong>Рік видання:</strong> 2018</p>
+          <p><strong>Видавництво:</strong> А-ба-ба-га-ла-ма-га</p>
+          <p><strong>Ціна:</strong> 440 грн</p>
+          <button class="info-button" onclick="location.href='info-marusya.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Маруся Чурай" 
+                  data-author="Ліна Костенко" 
+                  data-product="А-ба-ба-га-ла-ма-га"
+                  data-price="440">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/1984.jpg" alt="1984" class="book-image">
+          <h3>1984</h3>
+          <h3>Автор: Джордж Орвелл</h3>
+          <p><strong>Рік видання:</strong> 2021</p>
+          <p><strong>Видавництво:</strong> BookChef</p>
+          <p><strong>Ціна:</strong> 150 грн</p>
+          <button class="info-button" onclick="location.href='info-1984.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="1984" 
+                  data-author="Джордж Орвелл" 
+                  data-product="BookChef"
+                  data-price="150">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/grim.jpg" alt="Казки братів Грімм" class="book-image">
+          <h3>Казки братів Грімм</h3>
+          <h3>Автор: Брати Грімм</h3>
+          <p><strong>Рік видання:</strong> 2012</p>
+          <p><strong>Видавництво:</strong> Пегас</p>
+          <p><strong>Ціна:</strong> 109 грн</p>
+          <button class="info-button" onclick="location.href='info-grim.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Казки братів Грімм" 
+                  data-author="Брати Грімм" 
+                  data-product="Пегас"
+                  data-price="109">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/sea.jpg" alt="Старий і море" class="book-image">
+          <h3>Старий і море</h3>
+          <h3>Автор: Ернест Гемінґвей</h3>
+          <p><strong>Рік видання:</strong> 2017</p>
+          <p><strong>Видавництво:</strong> Видавництво Старого Лева</p>
+          <p><strong>Ціна:</strong> 480 грн</p>
+          <button class="info-button" onclick="location.href='info-sea.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Старий і море" 
+                  data-author="Ернест Гемінґвей" 
+                  data-product="Видавництво Старого Лева"
+                  data-price="480">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/crime.jpg" alt="Зворотний бік злочину" class="book-image">
+          <h3>Зворотний бік злочину</h3>
+          <h3>Автор: Іван Франко</h3>
+          <p><strong>Рік видання:</strong> 2017</p>
+          <p><strong>Видавництво:</strong> Юрінком Інтер</p>
+          <p><strong>Ціна:</strong> 267 грн</p>
+          <button class="info-button" onclick="location.href='info-crime.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Зворотний бік злочину" 
+                  data-author="Іван Франко" 
+                  data-product="Юрінком Інтер"
+                  data-price="267">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/zvitoduchy.jpg" alt="Звіродухи" class="book-image">
+          <h3>Звіродухи. Книга 1. Народжені вільними</h3>
+          <h3>Автор: Брендон Мулл</h3>
+          <p><strong>Рік видання:</strong> 2017</p>
+          <p><strong>Видавництво:</strong> Ранок</p>
+          <p><strong>Ціна:</strong> 290 грн</p>
+          <button class="info-button" onclick="location.href='info-zviroduchy.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Звіродухи. Книга 1. Народжені вільними" 
+                  data-author="Брендон Мулл" 
+                  data-product="Ранок"
+                  data-price="290">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/pes.jpg" alt="Пес на ім'я Мані, або Абетка грошей" class="book-image">
+          <h3>Пес на ім'я Мані, або Абетка грошей</h3>
+          <h3>Автор: Бодо Шефер</h3>
+          <p><strong>Рік видання:</strong> 2008</p>
+          <p><strong>Видавництво:</strong> Видавництво Старого Лева</p>
+          <p><strong>Ціна:</strong> 250 грн</p>
+          <button class="info-button" onclick="location.href='info-pes.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Пес на ім'я Мані, або Абетка грошей" 
+                  data-author="Бодо Шефер" 
+                  data-product="Видавництво Старого Лева"
+                  data-price="250">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/govoryty.jpg" alt="Мистецтво говорити. Таємниці ефективного спілкування" class="book-image">
+          <h3>Книга Мистецтво говорити. Таємниці ефективного спілкування</h3>
+          <h3>Автор: Джеймс Борг</h3>
+          <p><strong>Рік видання:</strong> 2016</p>
+          <p><strong>Видавництво:</strong> Фабула</p>
+          <p><strong>Ціна:</strong> 390 грн</p>
+          <button class="info-button" onclick="location.href='info-govoryty.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Мистецтво говорити. Таємниці ефективного спілкування" 
+                  data-author="Джеймс Борг" 
+                  data-product="Фабула"
+                  data-price="390">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/misto-divchat.jpg" alt="Місто дівчат" class="book-image">
+          <h3>Місто дівчат</h3>
+          <h3>Автор: Елізабет Ґілберт</h3>
+          <p><strong>Рік видання:</strong> 2019</p>
+          <p><strong>Видавництво:</strong> Видавництво Старого Лева</p>
+          <p><strong>Ціна:</strong> 400 грн</p>
+          <button class="info-button" onclick="location.href='info-misto-divchat.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Місто дівчат" 
+                  data-author="Елізабет Ґілберт" 
+                  data-product="Видавництво Старого Лева"
+                  data-price="400">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/cherchyla.jpg" alt="Фактор Черчилля. Як одна людина змінила історію" class="book-image">
+          <h3>Фактор Черчилля. Як одна людина змінила історію</h3>
+          <h3>Автор: Боріс Джонсон</h3>
+          <p><strong>Рік видання:</strong> 2019</p>
+          <p><strong>Видавництво:</strong> Vivat</p>
+          <p><strong>Ціна:</strong> 400 грн</p>
+          <button class="info-button" onclick="location.href='info-cherchyla.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Фактор Черчилля. Як одна людина змінила історію" 
+                  data-author="Боріс Джонсон" 
+                  data-product="Vivat"
+                  data-price="400">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/charli.jpg" alt="Чарлі і шоколадна фабрика" class="book-image">
+          <h3>Чарлі і шоколадна фабрика</h3>
+          <h3>Автор: Роальд Дал</h3>
+          <p><strong>Рік видання:</strong> 2009</p>
+          <p><strong>Видавництво:</strong> Vivat</p>
+          <p><strong>Ціна:</strong> 340 грн</p>
+          <button class="info-button" onclick="location.href='info-charli.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Чарлі і шоколадна фабрика" 
+                  data-author="Роальд Дал" 
+                  data-product="А-ба-ба-га-ла-ма-га"
+                  data-price="340">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/teroadory.jpg" alt="Тореадори з Васюківки" class="book-image">
+          <h3>Тореадори з Васюківки</h3>
+          <h3>Автор: Всеволод Нестайко</h3>
+          <p><strong>Рік видання:</strong> 2013</p>
+          <p><strong>Видавництво:</strong> А-ба-ба-га-ла-ма-га</p>
+          <p><strong>Ціна:</strong> 300 грн</p>
+          <button class="info-button" onclick="location.href='info-teroadory.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Тореадори з Васюківки" 
+                  data-author="Всеволод Нестайко" 
+                  data-product="А-ба-ба-га-ла-ма-га"
+                  data-price="300">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/ivan.jpg" alt="Іван Сила. Неймовірні пригоди" class="book-image">
+          <h3>Іван Сила. Неймовірні пригоди</h3>
+          <h3>Автор: Олександр Гаврош</h3>
+          <p><strong>Рік видання:</strong> 2014</p>
+          <p><strong>Видавництво:</strong> А-ба-ба-га-ла-ма-га</p>
+          <p><strong>Ціна:</strong> 280 грн</p>
+          <button class="info-button" onclick="location.href='info-ivan.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Іван Сила. Неймовірні пригоди" 
+                  data-author="Олександр Гаврош" 
+                  data-product="А-ба-ба-га-ла-ма-га"
+                  data-price="280">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/posibnyk.jpg" alt="Посібник з убивства для хорошої дівчинки" class="book-image">
+          <h3>Посібник з убивства для хорошої дівчинки</h3>
+          <h3>Автор: Голлі Джексон</h3>
+          <p><strong>Рік видання:</strong> 2023</p>
+          <p><strong>Видавництво:</strong> Ранок</p>
+          <p><strong>Ціна:</strong> 550 грн</p>
+          <button class="info-button" onclick="location.href='info-posibnyk.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Посібник з убивства для хорошої дівчинки" 
+                  data-author="Голлі Джексон" 
+                  data-product="Ранок"
+                  data-price="550">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/harri.jpg" alt="Гаррі Поттер і філософський камінь" class="book-image">
+          <h3>Гаррі Поттер і філософський камінь</h3>
+          <h3>Автор: Джоан Роулінг</h3>
+          <p><strong>Рік видання:</strong> 2017</p>
+          <p><strong>Видавництво:</strong> А-ба-ба-га-ла-ма-га</p>
+          <p><strong>Ціна:</strong> 380 грн</p>
+          <button class="info-button" onclick="location.href='info-harri.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Гаррі Поттер і філософський камінь" 
+                  data-author="Джоан Роулінг" 
+                  data-product="А-ба-ба-га-ла-ма-га"
+                  data-price="380">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/prync.jpg" alt="Маленький принц" class="book-image">
+          <h3>Маленький принц</h3>
+          <h3>Автор: Антуан де Сент-Екзюпері</h3>
+          <p><strong>Рік видання:</strong> 2024</p>
+          <p><strong>Видавництво:</strong> Ранок</p>
+          <p><strong>Ціна:</strong> 250 грн</p>
+          <button class="info-button" onclick="location.href='info-prync.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Маленький принц" 
+                  data-author="Антуан де Сент-Екзюпері" 
+                  data-product="Ранок"
+                  data-price="250">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/dance.jpg" alt="Танець недоумка" class="book-image">
+          <h3>Танець недоумка</h3>
+          <h3>Автор: Ілларіон Павлюк</h3>
+          <p><strong>Рік видання:</strong> 2019</p>
+          <p><strong>Видавництво:</strong> Видавництво Старого Лева</p>
+          <p><strong>Ціна:</strong> 480 грн</p>
+          <button class="info-button" onclick="location.href='info-dance.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Танець недоумка" 
+                  data-author="Ілларіон Павлюк" 
+                  data-product="Видавництво Старого Лева"
+                  data-price="480">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/451.jpg" alt="451° за Фаренгейтом" class="book-image">
+          <h3>451° за Фаренгейтом</h3>
+          <h3>Автор: Рей Бредбері</h3>
+          <p><strong>Рік видання:</strong> 2019</p>
+          <p><strong>Видавництво:</strong> Навчальна книга - Богдан</p>
+          <p><strong>Ціна:</strong> 249 грн</p>
+          <button class="info-button" onclick="location.href='info-451.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="451° за Фаренгейтом" 
+                  data-author="Рей Бредбері" 
+                  data-product="Навчальна книга - Богдан"
+                  data-price="249">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/batko.jpg" alt="Хрещений батько" class="book-image">
+          <h3>Хрещений батько</h3>
+          <h3>Автор: Маріо Пьюзо</h3>
+          <p><strong>Рік видання:</strong> 2024</p>
+          <p><strong>Видавництво:</strong> Лабораторія</p>
+          <p><strong>Ціна:</strong> 459 грн</p>
+          <button class="info-button" onclick="location.href='info-batko.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Хрещений батько" 
+                  data-author="Маріо Пьюзо" 
+                  data-product="Лабораторія"
+                  data-price="459">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/idy.jpg" alt="Іди туди, де страшно. І отримаєш те, про що мрієш" class="book-image">
+          <h3>Іди туди, де страшно. І отримаєш те, про що мрієш</h3>
+          <h3>Автор: Джим Лоулесс</h3>
+          <p><strong>Рік видання:</strong> 2022</p>
+          <p><strong>Видавництво:</strong> BookChef</p>
+          <p><strong>Ціна:</strong> 280 грн</p>
+          <button class="info-button" onclick="location.href='info-idy.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Іди туди, де страшно. І отримаєш те, про що мрієш" 
+                  data-author="Джим Лоулесс" 
+                  data-product="BookChef"
+                  data-price="280">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/chem.jpg" alt="Хімія смерті. Перше розслідування" class="book-image">
+          <h3>Хімія смерті. Перше розслідування</h3>
+          <h3>Автор: Саймон Бекетт</h3>
+          <p><strong>Рік видання:</strong> 2024</p>
+          <p><strong>Видавництво:</strong> Книжковий клуб "Клуб Сімейного Дозвілля"</p>
+          <p><strong>Ціна:</strong> 300 грн</p>
+          <button class="info-button" onclick="location.href='info-chem.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Хімія смерті. Перше розслідування" 
+                  data-author="Саймон Бекетт" 
+                  data-product="Книжковий клуб - Клуб Сімейного Дозвілля"
+                  data-price="300">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/zone.jpg" alt="Мертва зона" class="book-image">
+          <h3>Мертва зона</h3>
+          <h3>Автор: Стівен Кінг</h3>
+          <p><strong>Рік видання:</strong> 2020</p>
+          <p><strong>Видавництво:</strong> Книжковий клуб "Клуб Сімейного Дозвілля"</p>
+          <p><strong>Ціна:</strong> 400 грн</p>
+          <button class="info-button" onclick="location.href='info-zone.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Мертва зона" 
+                  data-author="Стівен Кінг" 
+                  data-product="Книжковий клуб - Клуб Сімейного Дозвілля"
+                  data-price="400">
+            Додати в кошик
+          </button>
+        </div>
+        <div class="book-card">
+          <img src="images/skelet.jpg" alt="Команда скелетів" class="book-image">
+          <h3>Команда скелетів</h3>
+          <h3>Автор: Стівен Кінг</h3>
+          <p><strong>Рік видання:</strong> 2024</p>
+          <p><strong>Видавництво:</strong> Книжковий клуб "Клуб Сімейного Дозвілля"</p>
+          <p><strong>Ціна:</strong> 540 грн</p>
+          <button class="info-button" onclick="location.href='info-skelet.html';">Дізнатися більше</button>
+          <button class="add-to-cart" 
+                  data-title="Команда скелетів" 
+                  data-author="Стівен Кінг" 
+                  data-product="Книжковий клуб - Клуб Сімейного Дозвілля"
+                  data-price="540">
+            Додати в кошик
+          </button>
+        </div>
+      </div>
+  </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2015-2024 Книжковий магазин. Усі права захищено.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/profile.php?id=100016346208107" target="_blank">
+        <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/nazar_zakharkiv_?igsh=N3oyeHAyaGg5N2Ni" target="_blank">
+        <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://t.me/nazar_zakharkiv1" target="_blank">
+        <img src="images/telegram-icon.png" alt="Telegram" class="social-icon">
+      </a>
+    </div>
+  </footer>
+  <script src="menu_script.js"></script>
+  <script src="script.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>

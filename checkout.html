@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформлення замовлення - BookLand</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/books.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+          <img src="images/books.png" alt="Логотип магазину" class="logo">
+          <h1 class="store-title">BookLand</h1>
+        </div>
+        <nav>
+          <div class="menu-container">
+            <button class="menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <span class="menu-label">Меню</span> 
+        </div>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="catalog.html">Каталог книг</a></li>
+            <li><a href="new-arrivals.html">Новинки</a></li>
+            <li><a href="audio-book.html">Аудіокниги</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="catalog.html">Каталог книг</a></li>
+            <li><a href="new-arrivals.html">Новинки</a></li>
+            <li><a href="audio-book.html">Аудіокниги</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section class="hero">
+      <h1>Оформлення замовлення</h1>
+      <p>Перевірте свій кошик і заповніть форму для завершення покупки.</p>
+    </section>
+    <section class="checkout-content">
+      <div id="order-items">
+        <h2>Ваші товари</h2>
+        <ul id="cart-items-list">
+        </ul>
+      </div>
+      <form id="order-form">
+        <h2>Дані для замовлення</h2>
+        <div>
+          <label for="surname">Прізвище:</label>
+          <input type="text" id="surname" name="surname" required>
+        </div>
+        <div>
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="patronymic">По-батькові:</label>
+          <input type="text" id="patronymic" name="patronymic" required>
+        </div>
+        <div>
+          <label for="phone">Номер телефону:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+          <label for="email">Електронна пошта:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="delivery">Спосіб доставки:</label>
+          <select id="delivery" name="delivery" required>
+            <option value="pickup">Самовивіз</option>
+            <option value="nova-poshta">Нова пошта</option>
+          </select>
+        </div>
+        <div id="nova-poshta-fields" style="display: none;">
+          <div>
+            <label for="city">Місто:</label>
+            <input type="text" id="city" name="city">
+          </div>
+          <div>
+            <label for="region">Область:</label>
+            <input type="text" id="region" name="region">
+          </div>
+          <div>
+            <label for="warehouse">Номер відділення:</label>
+            <input type="text" id="warehouse" name="warehouse">
+          </div>
+        </div>
+        <div>
+          <p>Сума товарів: <span id="product-price">0</span></p>
+          <p>Вартість доставки: <span id="delivery-price">0</span></p>
+          <p><strong>Загальна сума: <span id="total-price">0</span></strong></p>
+        </div>
+        <button class="order-button">Оформити замовлення</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2015-2024 Книжковий магазин. Усі права захищено.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/profile.php?id=100016346208107" target="_blank">
+        <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/nazar_zakharkiv_?igsh=N3oyeHAyaGg5N2Ni" target="_blank">
+        <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://t.me/nazar_zakharkiv1" target="_blank">
+        <img src="images/telegram-icon.png" alt="Telegram" class="social-icon">
+      </a>
+    </div>
+  </footer>
+
+  <script src="checkout.js"></script>
+  <script src="menu_script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
